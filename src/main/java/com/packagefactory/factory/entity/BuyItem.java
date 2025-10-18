@@ -26,6 +26,8 @@ public class BuyItem {
 
     private Double weight;
 
+    private Double quantity;
+
     @ManyToOne
     @JoinColumn(name = "stock_id")
     private Stock stock;
