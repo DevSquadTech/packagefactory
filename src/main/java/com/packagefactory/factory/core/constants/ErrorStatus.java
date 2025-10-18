@@ -1,0 +1,14 @@
+package com.packagefactory.factory.core.constants;
+
+public enum ErrorStatus {
+    ENTRY_NOT_FOUND,
+    ENTRY_ALREADY_EXISTS,
+    INTERNAL_SERVER_ERROR,
+    BAD_REQUEST,
+    REGION_NOT_FOUND,
+    PRICE_CATEGORY_NOT_FOUND,
+    VENDOR_NOT_FOUND,
+    CUSTOMER_ALREADY_EXISTS,
+    CUSTOMER_NOT_FOUND,
+    SUPPLIER_NOT_FOUND
+}
