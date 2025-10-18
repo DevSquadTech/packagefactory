@@ -31,4 +31,11 @@ public class BuyInvoice {
 
     @OneToMany(mappedBy = "BuyInvoice",cascade = CascadeType.ALL,orphanRemoval = true)
     private List<BuyInvoiceItem> buyInvoiceItems;
+
+    @ManyToOne
+    @JoinColumn(name = "supplier_id")
+    private Supplier supplier;
+
+    @OneToOne(mappedBy = "buyInvoice", cascade = CascadeType.ALL)
+    private Transaction transaction;
 }

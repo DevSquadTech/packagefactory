@@ -31,4 +31,8 @@ public class SalesReturnInvoice {
 
     @OneToMany(mappedBy = "salesReturnInvoice", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<SalesReturnItem> items;
+
+    @OneToOne(mappedBy = "salesInvoice", cascade = CascadeType.ALL)
+    private Transaction transaction;
+
 }

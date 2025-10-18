@@ -34,4 +34,7 @@ public class Customer {
 
     @OneToMany(mappedBy = "customer")
     private List<SalesReturnInvoice> salesReturnInvoices;
+
+    @Column(nullable = false)
+    private Double balance = 0.0;
 }
